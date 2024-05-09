@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "image": "../../public/assets/food.svg",
+      "name": "Spicy seasoned seafood noodles",
+      "price": 2.29,
+      "sale": 20
+    },
+    {
+      "id": 2,
+      "image": "../../public/assets/image4.svg",
+      "name": "Salted Pasta with mushroom sauce",
+      "price": 2.69,
+      "sale": 11
+    },
+    {
+        "id": 3,
+        "image": "../../public/assets/image5.svg",
+        "name": "Beef dumpling in hot and sour soup",
+        "price": 2.99,
+        "sale": 16
+      },
+      {
+        "id": 4,
+        "image": "../../public/assets/image6.svg",
+        "name": "Healthy noodle with spinach leaf",
+        "price": 3.29,
+        "sale": 22
+      },
+      {
+        "id": 5,
+        "image": "../../public/assets/image6.svg",
+        "name": "Hot spicy fried rice with omelet",
+        "price": 3.49,
+        "sale": 13
+      },
+      {
+        "id": 6,
+        "image": "../../public/assets/image7.svg",
+        "name": "Spicy instant noodle with special omelette",
+        "price": 3.59,
+        "sale": 17
+      },
+      {
+        "id": 7,
+        "image": "../../public/assets/image8.svg",
+        "name": "Spicy seasoned seafood noodles",
+        "price": 4.29,
+        "sale": 20
+      },
+      {
+        "id": 8,
+        "image": "../../public/assets/image9.jpg",
+        "name": "Spicy seasoned seafood noodles",
+        "price": 3.39,
+        "sale": 23
+      },
+      {
+        "id": 9,
+        "image": "../../public/assets/image10.jpg",
+        "name": "Spicy seasoned seafood noodles",
+        "price": 5.29,
+        "sale": 25
+      },
+      {
+        "id": 10,
+        "image": "../../public/assets/image11.png",
+        "name": "Spicy seasoned seafood noodles",
+        "price": 3.11,
+        "sale": 15
+      }
+  ]
+}
