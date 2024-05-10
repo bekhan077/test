@@ -34,7 +34,7 @@ const CartProduct = () => {
       <div className=" flex flex-col gap-[19px] pt-[13px]">
         <p className="text-[#fff]">$ 4,58</p>
         <button className="w-[45px] text-white h-[45px] border rounded-lg border-[#FF7CA3] bg-[##11D2B] flex justify-center items-center">
-          <CgTrashEmpty className="text-[#FF7CA3]"/>
+          <CgTrashEmpty className="text-[#FF7CA3]" />
         </button>
       </div>
     </div>

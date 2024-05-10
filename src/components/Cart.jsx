@@ -1,7 +1,7 @@
 import React from "react";
 import CartProduct from "./CartProduct";
 
-const Cart = () => {
+const Cart = ({ setPay }) => {
   return (
     <div className="py-[22px] px-[24px]">
       <h3 className="text-2xl font-semibold text-[#FFF]">Orders #34562</h3>
@@ -40,7 +40,10 @@ const Cart = () => {
           <p className="text-[#ABBBC2] text-sm font-normal">Sub total</p>
           <p className="text-[#FFFFFF] text-base font-medium"> $ 21,03</p>
         </div>
-        <button className="text-sm font-semibold rounded-[8px] mt-[42px] text-[#FAFAFA] w-[314px] bg-[#EA7C69] py-[14px] px-[14px]">
+        <button
+          onClick={() => setPay(true)}
+          className="text-sm font-semibold rounded-[8px] mt-[42px] text-[#FAFAFA] w-[314px] bg-[#EA7C69] py-[14px] px-[14px]"
+        >
           Continue to Payment
         </button>
       </div>

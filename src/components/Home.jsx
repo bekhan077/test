@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import data1 from "../Data.json";
+import { data } from "../Data";
 
 const Home = () => {
-  const { data } = data1;
+  const [search, setSearch] = useState("");
+
+  const searchCard = data.filter((val) => {
+    return val.name.toLowerCase().includes(search.toLowerCase());
+  });
+  console.log(searchCard);
   return (
     <div className="pl-[10px] pt-2 w-full pr-10">
       <div className="flex justify-between w-[100%]">
@@ -16,7 +21,9 @@ const Home = () => {
           <input
             className=" bg-transparent w-full outline-none text-[#fff]"
             type="search"
+            value={search}
             name="search"
+            onChange={(e) => setSearch(e.target.value)}
             id="search"
             placeholder="Search for food, coffe, etc.."
           />
@@ -53,7 +60,7 @@ const Home = () => {
         </div>
 
         <div className="flex gap-[28px] flex-wrap overflow-x-scroll scroll h-[63vh] w-[100%]">
-          {data.map((product, index) => (
+          {searchCard.map((product, index) => (
             <div
               key={index}
               className="hover:scale-105 transition-all ease-in-out duration-300 hover:cursor-pointer rounded-[20px] w-[191px] h-[226px] bg-[#1F1D2B] relative mt-[68px] flex flex-col justify-center items-center"
